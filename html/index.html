@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Bhutiya</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+      <a href="#" class="logo"><span>Bhu</span><span>iya</span></a>  
+      <ul class="nav">
+        <li><a href="#"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Adults</a></li>
+        <li><a href="#">Trend</a></li>
+        <li><a href="#">Mylist</a></li>
+      </ul>
+      
+      <div class="search">
+        <input type="text" placeholder="Search"/>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </header>
+
+   <div class="banner">
+      <div class="content active">
+   
+          <h4>
+            <span>2024</span><span><i>16+</i></span><span>2h</span><span>Horror/Comedy</span>
+          </h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cupiditate quae et tempora, aspernatur autem facilis velit saepe earum incidunt quaerat libero! Doloribus recusandae minus maxime quidem odio velit adipisci?</p>
+    
+          <div class="button">
+              <a href="#"><i class="fa fa-play"></i>Watch</a>
+              <a href="#"><i class="fa fa-plus"></i>My List</a>
+          </div>
+      </div>
+      <div class="carousel-box">
+        <div class="carousel">
+            <div class="carousel-item"><img src="../assets/Munjyaposter.jpg" alt="munjya" ></div>
+            <div class="carousel-item"><img src="../assets/bhediyaposter.jpg" alt="bhediya" onclick="changeBg('bhediya.png')"></div>
+            <div class="carousel-item"><img src="../assets/kakudaposter.jpg" alt="kakuda"></div>
+            <div class="carousel-item"><img src="../assets/streeposter.png" alt="stree 2"></div>
+            <div class="carousel-item"><img src="../assets/bhulposter.png" alt="bhutiya"></div>
+        </div>
+    </div>
+          <a href="#" class="play" onclick="toggleVideo();"><i class="fa fa-play-circle-o"></i>Watch Trailer</a>
+
+      <ul class="social">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+   </div>
+   <div class="trailer">
+  <video src="../assets/videoplayback.mp4"> </video>
+</div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/function.js"></script>
+   <script>
+       $(document).ready(function(){
+           // Initialize the carousel
+           $('.carousel').carousel();
+       });
+   </script>
+</body>
+</html>
